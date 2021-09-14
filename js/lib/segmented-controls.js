@@ -270,7 +270,7 @@ docReady(function () {
       }
 
       if( this.classList.contains("segmented-controls__btn--active") ){
-        this.classList.remove("segmented-controls__btn--active");
+        //this.classList.remove("segmented-controls__btn--active");
       }
       else{
         this.classList.add("segmented-controls__btn--active");

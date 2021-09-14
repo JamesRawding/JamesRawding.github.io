@@ -1,4 +1,6 @@
 .sidebar-nav-container{
+  background-color: $medium;
+  color: $light;
   padding: $spacing-l $spacing-m;
 
   @media(min-width:$break-md){

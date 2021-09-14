@@ -1,8 +1,8 @@
 {% block content %}
-  <section class="background-dark hero hero--with-copy">
+  <section class="hero hero--with-copy">
     <div class="container section-padding">
       <h1>{{hero_heading}}</h1>
-      <p class="display-block color-grey">{{hero_copy}}</p>
+      <p>{{hero_copy}}</p>
     </div>
   </section>
 
