@@ -1,0 +1,64 @@
+{% set page_title = "James Rawding - Front-end Developer and Designer" %}
+{% set page_description = "The homepage of my website" %}
+{% set hero_heading = "Technologies" %}
+{% set hero_copy = "Here is a list of just a few of the front-end technologies/methodologies I use day to day:" %}
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/index/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/index/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<main id="main-content">
+  {% include "partials/blocks/article-hero.nunjucks" %}
+  <section class="small-container section-padding">
+    <h2>Languages</h2>
+    <ul>
+      <li>HTML</li>
+      <li>SCSS</li>
+      <li>JS/jQuery</li>
+      <li>Nunjucks</li>
+    </ul>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Methodologies</h2>
+    <ul>
+      <li>BEM</li>
+      <li>Grid/Flex</li>
+      <li>Agile</li>
+    </ul>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Technologies</h2>
+    <ul>
+      <li>Gulp</li>
+      <li>NPM</li>
+      <li>GIT</li>
+      <li>Command Line</li>
+      <li>Browserstack</li>
+      <li>VWO</li>
+      <li>Jira</li>
+      <li>Azure Dev Ops</li>
+      <li>Siteimprove</li>
+      <li>Lighthouse</li>
+    </ul>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Apps</h2>
+    <ul>
+      <li>Terminal</li>
+      <li>Sketch</li>
+      <li>Atom IDE</li>
+      <li>Adobe Suite</li>
+    </ul>
+
+  </section>
+
+
+
+
+
+</main>
+
+
+
+
+{% endblock %}

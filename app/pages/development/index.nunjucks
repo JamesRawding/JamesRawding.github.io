@@ -1,0 +1,48 @@
+{% set page_title = "James Rawding - Front-end Developer and Designer" %}
+{% set page_description = "The homepage of my website" %}
+{% set hero_heading = "Development" %}
+{% set hero_subheading = "Performance is key" %}
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/index/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/index/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<main id="main-content">
+  {% include "partials/blocks/category-hero.nunjucks" %}
+  <section class="small-container section-padding">
+    <h2>What I do</h2>
+    <p>I create performant front end code using all the latest techniques to get every last bit of performance out of the page.</p>
+  </section>
+  <hr class="small-container">
+  <section class="small-container section-padding grid-parent grid-parent--med-4-4-4">
+    <div class="card-medium">
+      <a class="reverse-link" href="/development/performance.html">
+        <h3>Performance</h3>
+      </a>
+      <p>Building fast web pages.</p>
+    </div>
+    <div class="card-medium">
+      <a class="reverse-link" href="/development/design-system.html">
+        <h3>Design System</h3>
+      </a>
+      <p>Creating a design language.</p>
+    </div>
+    <div class="card-medium">
+      <a class="reverse-link" href="/development/technologies.html">
+        <h3>Technologies</h3>
+      </a>
+      <p>From Nunjucks to NPM, see how I work.</p>
+    </div>
+  </section>
+
+
+
+</main>
+
+
+
+
+{% endblock %}

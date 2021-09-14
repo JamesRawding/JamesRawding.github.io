@@ -1,0 +1,49 @@
+{% set page_title = "James Rawding - Front-end Developer and Designer" %}
+{% set page_description = "The homepage of my website" %}
+{% set hero_heading = "Performance" %}
+{% set hero_copy = "There are various ways of improving page performance, but I’m not going to list all the things you can do, that’s what Harry Roberts is for! Here are just a few techniques I have used in the past to turn a low performing website into one of the highest performing sites in its sector." %}
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/index/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/index/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<main id="main-content">
+  {% include "partials/blocks/article-hero.nunjucks" %}
+  <section class="small-container section-padding">
+    <h2>Testing/Auditing</h2>
+    <p>I spend a lot of my time in Lighthouse, the network tab in devtools and webpagetest.org trying to find what issues there are on the page. It’s always my aim to get as high a score as possible in Lighthouse, and over the years this has helped me develop the skills needed to build high performing pages. Sadly more often than not these scores are dragged down by people including a ton of tracking tags into Google Tag Manager, silly people.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Critical CSS</h2>
+    <p>Splitting CSS up into critical and non-critical has seen huge gains in terms of performance on various projects, there is no good reason that I can see not to do this!</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Modular SCSS</h2>
+    <p>Building a Design System has helped a lot in terms of creating modular SCSS, having an overview of patterns rather than pages helps in terms of only including CSS in pages when it is needed.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Refactoring</h2>
+    <p>Refactoring code has seen massive improvements in terms of page performance. It’s always a good idea to tackle this a little bit at a time else it’s very easy to tie yourself up in knots, especially on a large website with lots of legacy code.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>JS library removal</h2>
+    <p>It’s easy to go for a quick option and use a library if some JS functionality is needed, sometimes you have to be pragmatic. But recently I set about removing/adapting patterns that used JS libraries that weren’t really improving the experience for the user and were kind of there for “design flair” such as carousels.</p>
+    <p>Removing these bulky libraries saw large gains, especially when they were render blocking scripts, which leads me onto...</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Render Blocking Resources</h2>
+    <p>Avoid them at all costs! Anything that delays HTML from loading is going to be awful for performance. Calling in JS and non-critical CSS at the end of the document is only going to be a good thing.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Core Web Vitals</h2>
+    <p>In 2020 I was tasked with improving performance scores in preparation for Googles Core Web Vitals update. Using the techniques above I managed to get pages that had Largest Contentful Paint times of around 5.5s and higher down to 2.2s on average. This resulted in the website being the most performant in that industry.</p>
+
+  </section>
+
+
+
+
+
+</main>
+
+
+
+
+{% endblock %}
