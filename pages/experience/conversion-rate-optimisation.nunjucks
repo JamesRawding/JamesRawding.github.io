@@ -1,0 +1,42 @@
+{% set page_title = "James Rawding - Front-end Developer and Designer" %}
+{% set page_description = "The homepage of my website" %}
+{% set hero_heading = "CRO" %}
+{% set hero_copy = "Testing is an integral way to make decisions, when making changes it is important to know they don’t have a negative impact on the user. Useful insight can still be gained from a test whether there is a significant improvement to conversion or not. Improving the conversion of a site requires real world quantative data, below are some the ways to get that data." %}
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/index/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/index/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<main id="main-content">
+  {% include "partials/blocks/article-hero.nunjucks" %}
+  <section class="small-container section-padding">
+    <h2>VWO</h2>
+    <p>VWO is a testing platform that has the ability to get data in various different ways:</p>
+    <ul>
+      <li>A/B tests</li>
+      <li>Heatmaps</li>
+      <li>Clickmaps</li>
+    </ul>
+    <p>These are essential tools to discover how a large number of users are interacting with a website. With this data informed decisions can be made on what changes (if any) should be made to improve conversion rates.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Google Analytics</h2>
+    <p>I use Google Analytics to determine which pages are the most popular if there is a need to get a significant result on a test quickly. It is also very handy to find out what the next/previous page path is as it can help guide certain decisions.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Previous Test</h2>
+    <p>One of the most successful tests I have run was changing a phone icon in a mobile header to a CTA that had the word “Contact” in it. This saw an uplift of 150% on phone calls into the contact centre. </p>
+
+  </section>
+
+
+
+
+
+</main>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,67 @@
+{% set page_title = "James Rawding - Front-end Developer and Designer" %}
+{% set page_description = "The homepage of my website" %}
+{% set hero_heading = "Accessibility" %}
+{% set hero_copy = "When it comes to design, accessibility shouldn’t be an afterthought. Any designs that are created with accessibility in mind will more than likely be helpful for all users, accessibility = usability. With that in mind here are just a few things I have done to improve one of the most accessible websites in its sector." %}
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/index/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/index/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<main id="main-content">
+  {% include "partials/blocks/article-hero.nunjucks" %}
+  <section class="small-container section-padding">
+    <h2>Types of Disability</h2>
+    <p>To design with accessibility in mind it helps to have a good understanding of potential issues people may have such as:</p>
+    <ul>
+      <li>Visual Impairment</li>
+      <li>Deafness & Hard of hearing</li>
+      <li>Cognitive</li>
+      <li>Mobility</li>
+    </ul>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Use of Colour</h2>
+    <p>Making sure there is enough contrast ratio between foreground and background colours is important users who have a visual impairment, such as colour-blindness. But this can also help people who have glare on their screen, such as outdoors using a mobile device.</p>
+    <p>Don’t use colour only to convey a message, use labels/obvious iconography too.</p>
+    <p>If initial designs are done in greyscale, it is a good indicator whether there is a usablity issue that could arise if someone has a visual impairment.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Touch Target Size</h2>
+    <p>When designing elements that are supposed to be clicked it is important to make them at least 44px X 44px, this helps users who may have a mobility issues.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Font Size</h2>
+    <p>It is important to use a font size that is easily legible and use relative CSS values to make sure the user has the ability to magnify the screen if they need to do so.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Screen Readers</h2>
+    <p>Use markup that meets WCAG criteria and is screen reader friendly. Make sure links and buttons use descriptive text and keep headings in the correct order.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Keyboard Only Users</h2>
+    <p>Some users may not be able to navigate websites with a mouse, because of this a website should be easily navigable by only using a keyboard. This can be helped by keeping the default tab order on clickable elements, having an obvious focus state on elements, and allowing a nav to be accessed by click, not hover.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Testing</h2>
+    <p>Testing should ideally be done by real users, but if this isn’t possible, we should try and mimic situations that they may find themselves in by:</p>
+    <ul>
+      <li>Testing with a screen reader/voiceover</li>
+      <li>Designing in greyscale to check for usability issues introduced by colour</li>
+      <li>Test using keyboard only</li>
+    </ul>
+
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Testing Tools</h2>
+    <p>Testing tools such as Lighthouse/Axe/Siteimprove only approximate issues and should be used as validation for other tests that have already been done.</p>
+    <p>However, they are very handy for highlighting current issues on existing sites. Siteimprove has a very in-depth accessibility module which has been essential in fixing issues with legacy code.</p>
+
+
+  </section>
+
+
+
+
+
+</main>
+
+
+
+
+{% endblock %}

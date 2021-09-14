@@ -1,0 +1,46 @@
+{% set page_title = "James Rawding - Front-end Developer and Designer" %}
+{% set page_description = "The homepage of my website" %}
+{% set hero_heading = "Design Process" %}
+{% set hero_copy = "Design shouldn’t be based on assumption, it should be data driven and tested on real users, quickly and often throughout the design process. Here are some of the techniques and methodologies that I use throughout the process." %}
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/index/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/index/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<main id="main-content">
+  {% include "partials/blocks/article-hero.nunjucks" %}
+  <section class="small-container section-padding">
+    <h2>Design with Accessibility in Mind</h2>
+    <p>Accessibility = usability and should be baked into designs from the start, rather than being an afterthought. Users should be able to interact with a product regardless of any physical/mental issues they may have. Find out more detail on my accessibility work.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Design Thinking</h2>
+    <p>Using the Design Thinking process helps deliver products that the user needs rather than basing designs on assumptions. Having access to real users is essential for this process to work.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Rapid Prototyping</h2>
+    <p>Rapid prototyping is essential to find what works for the user early on. Iterations of designs should be tested early and often, even a basic wireframe or paper prototype can be tested on a user to help get valuable feedback before moving on to time consuming hifi designs.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Gestalt Principles</h2>
+    <p>Using Gestalt principles to aid design choices, such as grouping certain elements or making certain elements stand out from others can make it easier for users to understand what is happening in the design and is scientifically proven to do so.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Sketch</h2>
+    <p>I use Sketch for creating wireframes and hifi designs. A great feature in Sketch is the ability to make reusable components that are responsive, because of this feature all components that are in a Design System can be recreated in Sketch, making designing pages a lot more efficient. This frees up time to focus on problem solving rather than creating the same component for the 100th time.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>User Testing</h2>
+    <p>To find out if a product works as it should the people who will tell you are your users. Running testing sessions helps find issues you may not see if you are too close to the project. Testing should happen throughout a products lifecycle, from design to production and beyond. </p>
+  
+
+  </section>
+
+
+
+
+
+</main>
+
+
+
+
+{% endblock %}

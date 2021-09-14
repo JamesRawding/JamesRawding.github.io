@@ -1,0 +1,36 @@
+{% set page_title = "James Rawding - Front-end Developer and Designer" %}
+{% set page_description = "The homepage of my website" %}
+{% set hero_heading = "Design System" %}
+{% set hero_copy = "Since building the Irwin Mitchell Design System the benefits of it were clear to see, rapid prototypes, consistency, efficiency the list goes on. Creating a design language helped bring various projects inline with the master brand. Here is a bit of background on the work that was undertaken." %}
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/index/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/index/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<main id="main-content">
+  {% include "partials/blocks/article-hero.nunjucks" %}
+  <section class="small-container section-padding">
+    <h2>Pattern Audit</h2>
+    <p>The first step was identifying all of the patterns across the site, seeing which ones could be unified and then breaking them down into individual components. When all the patterns had been broken down the next step was to create these components in Sketch.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Sketch Components</h2>
+    <p>Sketch gives you the ability to create a library of components that can be accessed in any project. These components can be made to have editable content inserted into them which makes wireframing/designing incredibly quick.</p>
+    <hr class="hr-lg-spacing hr-minus-margin">
+    <h2>Front-end Components</h2>
+    <p>Creating individual components with their own HTML/CSS/JS makes them reusable, manageable, lean and improves consistency across projects.</p>
+    <p>After these components have been broken down it helps with page performance as you are only using the CSS required for the patterns you are using on a specific page.</p>
+  </section>
+
+
+
+
+
+</main>
+
+
+
+
+{% endblock %}

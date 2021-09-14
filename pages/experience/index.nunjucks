@@ -1,0 +1,48 @@
+{% set page_title = "James Rawding - Front-end Developer and Designer" %}
+{% set page_description = "The homepage of my website" %}
+{% set hero_heading = "Experience" %}
+{% set hero_subheading = "Designing with the user in mind" %}
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/index/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/index/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<main id="main-content">
+  {% include "partials/blocks/category-hero.nunjucks" %}
+  <section class="small-container section-padding">
+    <h2>What I do</h2>
+    <p>I create experiences that work for everyone, based on best practice, research and inclusivity.</p>
+  </section>
+  <hr class="small-container">
+  <section class="small-container section-padding grid-parent grid-parent--med-4-4-4">
+    <div class="card-medium">
+      <a class="reverse-link" href="/experience/accessibility.html">
+        <h3>Accessibility</h3>
+      </a>
+      <p>Designing with accessibility in mind.</p>
+    </div>
+    <div class="card-medium">
+      <a class="reverse-link" href="/experience/design-process.html">
+        <h3>Design Process</h3>
+      </a>
+      <p>From rapid prototypes to hifi designs.</p>
+    </div>
+    <div class="card-medium">
+      <a class="reverse-link" href="/experience/conversion-rate-optimisation.html">
+        <h3>CRO</h3>
+      </a>
+      <p>Increasing conversion based on data.</p>
+    </div>
+  </section>
+
+
+
+</main>
+
+
+
+
+{% endblock %}

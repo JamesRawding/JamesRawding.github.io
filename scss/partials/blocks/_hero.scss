@@ -1,0 +1,39 @@
+.hero{
+  position: relative;
+  padding: $spacing-s 0 $spacing-l 0;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+
+  @media(min-width:$break-md){
+    padding: rem(70) 0 rem(120) 0;
+
+  }
+  span{
+    @include margin-top-s;
+    line-height: 1.2;
+
+    @media(min-width:$break-md){
+      margin-top:0;
+      line-height: 1.1;
+    }
+  }
+
+  img{
+    display: none;
+
+    @media(min-width:$break-md){
+      display: block;
+      position: absolute;
+      right: 0;
+      top:0;
+    }
+
+  }
+
+  &--with-copy{
+    clip-path:none;
+    @media(min-width:$break-md){
+      clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+    }
+  }
+
+}

@@ -1,0 +1,40 @@
+{% set page_title = "James Rawding - Front-end Developer and Designer" %}
+{% set page_description = "The homepage of my website" %}
+{% set critical_css = '<link rel="stylesheet" href="/css/templates/index/critical.css">' %}
+
+{% set none_critical_css = "<script> loadCSS( '/css/templates/index/non-critical.css' ); </script>" %}
+
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<main id="main-content">
+  {% include "partials/blocks/home-hero.nunjucks" %}
+  <section class="small-container section-padding">
+    <h2>What I do</h2>
+    <p>I'm a Front-End Developer and Designer with a passion and know-how to deliver exceptional experiences focused on performance and accessibility.</p>
+  </section>
+  <hr class="small-container">
+  <section class="small-container section-padding grid-parent grid-parent--med-6-6">
+    <div class="card-medium">
+      <a class="reverse-link" href="/development">
+        <h3>Development</h3>
+      </a>
+      <p>The techniques and technologies I use.</p>
+    </div>
+    <div class="card-medium">
+      <a class="reverse-link" href="/experience">
+        <h3>Experience</h3>
+      </a>
+      <p>Creating experiences that work for everyone.</p>
+    </div>
+  </section>
+
+
+
+</main>
+
+
+
+
+{% endblock %}
