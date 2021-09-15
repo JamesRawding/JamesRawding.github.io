@@ -19,6 +19,11 @@
     display: none;
     @media(min-width:$break-md){
       display: block;
+
+      a{
+        @include padding-top-s;
+        @include padding-bottom-s;
+      }
     }
   }
 }

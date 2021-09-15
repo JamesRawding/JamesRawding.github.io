@@ -38,8 +38,15 @@
         font-family: inherit;
         border-bottom: rem(2) solid transparent;
         text-align: left;
-        -ms-flex:1 0 auto;
-        flex: 1 0 auto;
+        flex:0 0 auto;
+
+        &:last-of-type{
+          margin-right: 0;
+        }
+
+        &:focus{
+          outline:none;
+        }
 
         &--active{
           color: $light;
@@ -47,9 +54,7 @@
         }
 
 
-
         @media(min-width:$break-md){
-          flex:0 0 auto;
           margin-right: 0;
 
           &:focus,
@@ -57,10 +62,30 @@
             color: $light;
             border-color:$accent;
           }
+
+          @media(min-width:$break-md){
+            &:focus{
+              @include focus;
+              outline-style:auto;
+              outline-width: medium;
+            }
+          }
         }
       }
     }
+  }
 
+  .segmented-control-panel{
+    &:focus{
+      outline:none;
+    }
 
+    @media(min-width:$break-md){
+      &:focus{
+        @include focus;
+        outline-style:auto;
+        outline-width: medium;
+      }
+    }
   }
 }

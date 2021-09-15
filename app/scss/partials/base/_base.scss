@@ -33,6 +33,10 @@ main{
   color: $dark;
   min-width: 0;
   margin-top:-1px;
+
+  @media(min-width:$break-md){
+    margin-top: 0;
+  }
 }
 
 .container{
@@ -46,7 +50,7 @@ main{
 }
 
 .section-padding{
-  padding: $spacing-l $spacing-m;
+  padding: $spacing-xl $spacing-m;
 
   @media(min-width:$break-md){
     padding: $spacing-xl $spacing-l;
@@ -136,9 +140,13 @@ hr{
 .hr-minus-margin{
   margin-left: rem(-16);
   margin-right: rem(-16);
-  
+
   @media(min-width:$break-md){
     margin-left: rem(-32);
     margin-right: rem(-32);
   }
+}
+
+.full-height{
+  height: 100%;
 }

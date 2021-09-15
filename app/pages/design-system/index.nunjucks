@@ -11,7 +11,7 @@
 {% block content %}
 <main id="main-content">
   <div class="container full-height grid-parent grid-parent--med-3-9">
-    <div class="background-medium sidebar-nav-container">
+    <div class="sidebar-nav-container">
       {% include "partials/functional/sidebar-nav.nunjucks" %}
     </div>
     <section class="background-light section-padding">
