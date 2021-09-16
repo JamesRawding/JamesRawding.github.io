@@ -276,12 +276,6 @@ document.addEventListener('keydown', function(e) {
 
 firstFocusableElement.focus();
 
-// Remove focus state on mouseleave and touchend
-function mouseIsOut(el) {
-  el.on('mouseleave touchend', function() {
-  });
-}
-
 
 document.getElementById('navItem1').onclick = function(){
   var headerNavModal = document.getElementById('headerNavModal');
@@ -646,9 +640,11 @@ docReady(function () {
 
       if( this.classList.contains("segmented-controls__btn--active") ){
         //this.classList.remove("segmented-controls__btn--active");
+        this.blur();
       }
       else{
         this.classList.add("segmented-controls__btn--active");
+        this.blur();
       }
     };
   }
